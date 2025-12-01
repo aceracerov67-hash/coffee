@@ -261,11 +261,12 @@ body{
 .section-list{
     list-style: none;
     padding: 20px;
-    margin-top: 66px;
+    margin-top: 110px;
 }
 .section-img{
     margin: 30px;
 }
+
 .section-title{
   font-family: Fraunces 9pt;
   font-weight: 900;
@@ -285,32 +286,111 @@ body{
   color: #ffffff;
 }
 
+@media (max-width: 992px) {
+    .section-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-img img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+}
+
+
+.map-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /
+}
+
+.map-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
 
 
 
 
+.map-btn {
+  text-align: center;
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position:relative;
+  overflow:hidden;
+  margin: 0 20px;
+  background-color: #0e8684;
+}
 
+.map-btn:before {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 50px;
+  background : #fff;
+  left: -55px;
+  top: -40px;
+  transform: rotate(37deg);
+  transition: all .5s;
+  opacity: 0.3;
+}
 
+.map-btn:hover:before {
+  left:95%;
+}
 
+.map-title1{
+   font-family: Fraunces 9pt;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 0px;
+   color: #83888F;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------foooter------------------------------- */
+.map-title{
+  font-family: Fraunces 9pt;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0px;
+   margin: 10px;
+}
+.map-text{
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+   margin: 10px;
+}
+.map-img{ 
+  font-family: Fraunces 9pt;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0px;
+  margin: 10px;
+}
 
 
 .footer  {
